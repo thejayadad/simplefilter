@@ -1,12 +1,12 @@
 
 
 
-document.querySelector("#input").addEventListener("input", filterList)
+document.querySelector("#input").addEventListener("input", searchResult)
 
-function filterList(){
+function searchResult(){
     let search = document.querySelector("#input")
     let filter = search.value.toLowerCase()
-    let items = document.querySelectorAll(".list-group-item")
+    let items = document.querySelectorAll(".shoe")
 
     items.forEach((item) => {
         let text = item.textContent;
